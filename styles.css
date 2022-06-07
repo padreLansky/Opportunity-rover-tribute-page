@@ -1,1 +1,190 @@
-/* Copy and paste your CSS from CodePen into here */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+a {
+    color: DodgerBlue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: Salmon;
+}
+
+h2 {
+    margin-bottom: 4rem;
+}
+
+img {
+    display: block;
+}
+
+header {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: LightSalmon;
+    text-shadow: 0.1rem 0.1rem 0.3rem black, -0.1rem -0.1rem 0.3rem black,
+        -0.1rem 0.1rem 0.3rem black, 0.1rem -0.1rem 0.3rem black;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2rem;
+    max-width: 140rem;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+#main {
+    padding: 1.5rem;
+    background-color: Peru;
+    background-image: url(https://i.postimg.cc/qq48ncD3/martian-surface.jpg),
+        linear-gradient(Black 25%, Peru 30%, Bisque 35%, Peru);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#logo {
+    width: 16rem;
+    height: auto;
+    margin: 0 6rem 1rem 0;
+}
+
+#title h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+#title p {
+    font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+    #main {
+        padding: 0.5rem;
+    }
+
+    header {
+        /* flex-direction: column; */
+    }
+
+    #logo {
+        width: 12rem;
+        margin: 0 1rem 1rem 0;
+    }
+
+    #title h1 {
+        font-size: 4.5rem;
+        line-height: 1.2;
+    }
+
+    #title p {
+        font-size: 1.6rem;
+    }
+}
+
+#intro {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    overflow: auto;
+    margin: auto;
+    padding: 0;
+    /* border-radius: 0 0 2rem 2rem; */
+}
+
+#img-div {
+    /* flex: 3; */
+    margin: 0;
+    padding: 1rem;
+    width: 75%;
+    float: right;
+}
+
+#story {
+    /* flex: 1; */
+    margin: 0px;
+    padding: 0 1rem;
+}
+
+#story p {
+    text-align: left;
+    /* margin: 0; */
+}
+
+#image {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+#img-caption {
+    margin: 0.5rem;
+    font-style: italic;
+    color: LightSalmon;
+}
+
+@media (max-width: 800px) {
+    /*#img-div,
+      #story {
+          flex: 100%;
+      }*/
+
+    #img-div {
+        width: 100%;
+        /*     padding: 0.5rem; */
+    }
+
+    #img-caption {
+        font-size: 80%;
+    }
+}
+
+ul {
+    text-align: left;
+}
+
+li {
+    margin: 2rem 0;
+}
+
+li time {
+    display: block;
+    font-weight: bold;
+}
+
+#footer {
+    max-width: 80rem;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: left;
+    color: Silver;
+    margin-bottom: 4rem;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    font-size: 80%;
+}
