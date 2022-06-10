@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-weight: normal;
 }
 
 html {
@@ -16,7 +17,7 @@ body {
 }
 
 a {
-    color: DodgerBlue;
+    color: DeepSkyBlue;
     text-decoration: none;
 }
 
@@ -25,11 +26,11 @@ a:hover {
 }
 
 a:visited {
-    color: Salmon;
+    color: DarkSalmon;
 }
 
 h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 img {
@@ -38,13 +39,15 @@ img {
 
 header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    color: LightSalmon;
-    text-shadow: 0.1rem 0.1rem 0.3rem black, -0.1rem -0.1rem 0.3rem black,
-        -0.1rem 0.1rem 0.3rem black, 0.1rem -0.1rem 0.3rem black;
+    color: DarkSalmon;
+    text-shadow:
+        0 0 0.2rem black, 0 0 0.2rem black, 0 0 0.2rem black,
+        0 0 0.3rem black, 0 0 0.3rem black, 0 0 0.3rem black,
+        0 0 0.4rem black, 0 0 0.4rem black, 0 0 0.4rem black,
+        0 0 0.5rem black, 0 0 0.5rem black, 0 0 0.5rem black;
 }
 
 section {
@@ -68,53 +71,25 @@ section {
 #logo {
     width: 16rem;
     height: auto;
-    margin: 0 6rem 1rem 0;
+    margin: 1rem;
 }
 
 #title h1 {
     font-size: 6rem;
-    margin: 0;
+    margin: 0 8rem;
 }
 
 #title p {
     font-size: 2rem;
 }
 
-@media screen and (max-width: 600px) {
-    #main {
-        padding: 0.5rem;
-    }
-
-    header {
-        /* flex-direction: column; */
-    }
-
-    #logo {
-        width: 12rem;
-        margin: 0 1rem 1rem 0;
-    }
-
-    #title h1 {
-        font-size: 4.5rem;
-        line-height: 1.2;
-    }
-
-    #title p {
-        font-size: 1.6rem;
-    }
-}
-
 #intro {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
     overflow: auto;
     margin: auto;
     padding: 0;
-    /* border-radius: 0 0 2rem 2rem; */
 }
 
 #img-div {
-    /* flex: 3; */
     margin: 0;
     padding: 1rem;
     width: 75%;
@@ -122,14 +97,12 @@ section {
 }
 
 #story {
-    /* flex: 1; */
     margin: 0px;
     padding: 0 1rem;
 }
 
 #story p {
     text-align: left;
-    /* margin: 0; */
 }
 
 #image {
@@ -140,22 +113,51 @@ section {
 #img-caption {
     margin: 0.5rem;
     font-style: italic;
-    color: LightSalmon;
+    font-size: 1.6rem;
+    color: DarkSalmon;
 }
 
 @media screen and (max-width: 800px) {
-    /*#img-div,
-      #story {
-          flex: 100%;
-      }*/
+    #logo {
+        width: 14rem;
+    }
+
+    #title h1 {
+        font-size: 5rem;
+        margin: 0 4rem;
+    }
 
     #img-div {
         width: 100%;
-        /*     padding: 0.5rem; */
+        padding: 1rem 1rem 3rem 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #main {
+        padding: 0.5rem;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        width: 12rem;
+    }
+
+    #title h1 {
+        font-size: 4.5rem;
+        margin: 0 2rem;
+        line-height: 1.2;
+    }
+
+    #title p {
+        font-size: 1.6rem;
     }
 
     #img-caption {
-        font-size: 80%;
+        font-size: 1.3rem;
     }
 }
 
@@ -186,5 +188,5 @@ blockquote {
 cite {
     display: block;
     text-align: right;
-    font-size: 80%;
+    font-size: 1.3rem;
 }
